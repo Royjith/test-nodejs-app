@@ -1,0 +1,14 @@
+inputSet:
+  name: new-iput
+  identifier: newiput
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: test2
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
